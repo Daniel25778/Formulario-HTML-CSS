@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="input.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+  <main>
+      <form id="header" action="">
+           <header>
+            <h1>Cadastro de Alunos</h1>
+           </header>
+           
+        
+        <label id="nome">
+            Nome do Aluno:
+            <input type="text" class="input-box">
+        </label>
+        <label id="cidade"> 
+            Cidade
+            <input type="text" class="input-box">
+        </label>
+        <label id="estado" >
+            Estado:
+            <select class="input-box">
+                    <option>SP</option>
+                    <option>MG</option>
+                    <option>RJ</option>
+                    <option>ES</option>
+            </select>
+        </label>
+        <label id="cep">
+            CEP:
+            <input type="text" class="input-box">
+        </label>
+        <div id="curso">
+            Curso:
+            <label>
+                <input type="radio" name="curso">CAI
+            </label>
+            <label> 
+                <input type="radio" name="curso">TEC
+            </label>
+            <label>
+                <input type="radio" name="curso">FIC
+            </label>
+               <label>
+                <input type="radio" name="curso">FE
+               </label>
+                
+        </div>
+        <div id="areas">
+            Areas de Interesse:
+            <label><input type="checkbox" class="input-box">Desenvolvimento</label>
+            <label><input type="checkbox">Redes</label>
+            <label><input type="checkbox">Logistica</label>
+            <label><input type="checkbox">Recursos Humanos</label>
+        </div>
+        <label id="comentario" >
+           Comentário:
+           <textarea class="input-box"></textarea>
+
+        </label>
+         <div id="acoes">
+             <input  type="button" class="button green" value="Salvar" >
+             <input type="button" class="button red" value="Cancelar">
+         </div>
+      </form>
+     
+  </main>
+</body>
+</html>
